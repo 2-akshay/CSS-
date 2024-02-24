@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox content and other propertise</title>
+    <style>
+        #contenber{
+            height: 300px;
+            width: 400px;
+            border: 3px solid greenyellow;
+            display: flex;
+            /* this is flex-wrap prperty of flexbox contener */
+            flex-wrap: wrap;
+            /* aline items prperty of flexbox contener */
+            justify-content: center;
+            align-items: center;
+        
+           
+
+
+        }
+        /* Properties: Flex Items (Align Self) */
+        #box3{
+                align-self:center;
+                /* Properties: Flex Items (Flex Shrink */
+                flex-shrink: 4;
+                /* Properties: Flex Items (Flex Grow */
+                flex-grow: 2;
+            }
+        .box{
+            height: 50px;
+            width: 60px;
+            background-color: violet;
+            margin: 4px;
+        }
+        /* Properties: Flex Items (Order) */
+        #box1{background-color:black ; order: 3;}
+        #box2{background-color: blue;order: 4;}
+        #box3{background-color: burlywood;order: 1;}
+        #box4{background-color: brown;order: 2;}
+    </style>
+</head>
+<body>
+    <div id="contenber">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+
+    </div>
+</body>
+</html>

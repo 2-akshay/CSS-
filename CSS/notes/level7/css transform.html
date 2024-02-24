@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform</title>
+    <style>
+
+        /* rited proprrtise */
+        .div{
+            height: 60px;
+            width: 60px;
+            background-color: rgb(5, 188, 248);
+            border: 3px solid black;
+            border-radius: 5px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            transition: all 2s ease-in;
+          
+        }
+        .div:hover{
+            transform: rotate(270deg);
+        }
+
+        /* Scale propertise */
+        .div:hover{
+            background-color: chartreuse;
+            transform: scale(1.5);
+        }
+        /* translate */
+        .div:hover{
+            background-color: rgb(116, 15, 210);
+            transform: translate(20px)
+        }
+        /*  skew and skewX*/
+        .div:hover{
+            background-color: rgb(12, 224, 248);
+            transform: skew(600deg)
+        }
+
+            
+        
+    </style>
+</head>
+<body>
+    <div class="div">roted</div>
+</body>
+</html>
